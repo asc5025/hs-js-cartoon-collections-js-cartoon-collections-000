@@ -6,7 +6,7 @@ function dwarfRollCall(dwarves) {
   return nameIndexString;
 }
 
-function summonCaptainPlanet(planeteerCalls){
+function summonCaptainPlanet(planeteerCalls) {
   //using arrow function syntax 
   let newPlanet = planeteerCalls.map(planet => planet.toUpperCase() + '!');
   return newPlanet;
@@ -25,6 +25,18 @@ function longPlaneteerCalls(words) {
 function findTheCheese (foods) {
   var cheese = ['cheddar', 'gouda', 'camembert'];
   for (let foodsIndex = 0; foodsIndex < foods.length; foodsIndex++) {
+    let cheeseIndex = cheese.indexOf(foods[foodsIndex]);
+    if (cheeseIndex !== -1) {
+      return foods[foodsIndex];
+    }
+  }
+  return 'no cheese!';
+}
+
+/* Possible Nested for loops?
+function findTheCheese (foods) {
+  var cheese = ['cheddar', 'gouda', 'camembert'];
+  for (let foodsIndex = 0; foodsIndex < foods.length; foodsIndex++) {
     for (let cheeseIndex = 0; cheeseIndex < cheese.length; cheeseIndex++) {
       if (foods[foodsIndex] === cheese[cheeseIndex]) {
         return foods[foodsIndex];
@@ -34,3 +46,4 @@ function findTheCheese (foods) {
     }
   }
 }
+*/
