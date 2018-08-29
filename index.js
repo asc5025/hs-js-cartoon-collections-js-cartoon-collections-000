@@ -22,19 +22,19 @@ function longPlaneteerCalls(array) {
     }
   }
 }
+// possible .forEach ?
 
 function findTheCheese (foods) {
   var cheese = ['cheddar', 'gouda', 'camembert'];
   for (let foodsIndex = 0; foodsIndex < foods.length; foodsIndex++) {
     let cheeseIndex = cheese.indexOf(foods[foodsIndex]);
+    if (cheeseIndex !== -1) {
     //The indexOf() method returns the first index
     //at which a given element can be found in the
     //array, or -1 if it is not present.
-    if (cheeseIndex !== -1) {
       return foods[foodsIndex];
-    }
-  }
-  return 'no cheese!';
+    } 
+  } return 'no cheese!'
 }
 
 
