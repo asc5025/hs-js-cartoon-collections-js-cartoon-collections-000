@@ -7,8 +7,9 @@ function dwarfRollCall(dwarves) {
 }
 
 function summonCaptainPlanet(planeteerCalls) {
-  //using arrow function syntax 
   let newPlanet = planeteerCalls.map(planet => planet.toUpperCase() + '!');
+  //using arrow function expression 
+  //.map() returns a new array with elements that have been modified
   return newPlanet;
 }
 
@@ -35,6 +36,7 @@ function findTheCheese (foods) {
   }
   return 'no cheese!';
 }
+
 
 /* Possible Nested for loops?
 function findTheCheese (foods) {
