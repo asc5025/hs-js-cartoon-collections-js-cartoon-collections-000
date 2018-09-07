@@ -10,7 +10,11 @@ function summonCaptainPlanet(planeteerCalls) {
   let newPlanet = planeteerCalls.map(planet => planet.toUpperCase() + '!');
   //using arrow function expression 
   //.map() returns a new array with elements that have been modified
+<<<<<<< HEAD
   return newPlanet;
+=======
+  return newPlanent;
+>>>>>>> ea226b0fdc211822dc8879bb00ed5feaa295065a
 }
 
 function longPlaneteerCalls(array) {
